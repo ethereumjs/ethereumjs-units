@@ -2,13 +2,14 @@ var BigNumber = require('bignumber.js')
 
 var Units = {}
 
-var units = require('./units.js')
+var rawUnits = require('./units.js')
+var units = {}
 
-Object.keys(units).map(function (unit) {
-  units[unit] = new BigNumber(units[unit], 10)
+Object.keys(rawUnits).map(function (unit) {
+  units[unit] = new BigNumber(rawUnits[unit], 10)
 })
 
-Units.units = units
+Units.units = rawUnits
 
 Units.convert = function (value, from, to) {
   from = from.toLowerCase()

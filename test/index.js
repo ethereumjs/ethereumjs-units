@@ -20,3 +20,12 @@ describe('lazyConvert', function () {
     assert.equal(Units.lazyConvert('1 finney', 'eth'), '0.001 eth')
   })
 })
+
+describe('units export', function () {
+  it('should be available', function () {
+    assert.equal(typeof Units.units, 'object')
+  })
+  it('should contain strings', function () {
+    assert.equal(typeof Units.units['wei'], 'string')
+  })
+})
