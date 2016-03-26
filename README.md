@@ -1,5 +1,10 @@
 # ethereumjs-units
 
+[![NPM Package](https://img.shields.io/npm/v/ethereumjs-units.svg?style=flat-square)](https://www.npmjs.org/package/ethereumjs-units)
+[![Build Status](https://img.shields.io/travis/ethereumjs/ethereumjs-units.svg?branch=master&style=flat-square)](https://travis-ci.org/ethereumjs/ethereumjs-units)
+[![Coverage Status](https://img.shields.io/coveralls/ethereumjs/ethereumjs-units.svg?style=flat-square)](https://coveralls.io/r/ethereumjs/ethereumjs-units)
+[![Gitter](https://img.shields.io/gitter/room/ethereum/ethereumjs-lib.svg?style=flat-square)](https://gitter.im/ethereum/ethereumjs-lib) or #ethereumjs on freenode
+
 Unit conversion utility.
 
 There are two methods:
