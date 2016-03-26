@@ -8,7 +8,7 @@
     "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
     "lint": "standard",
     "prepublish": "npm run lint && npm run test",
-    "test": "istanbul test node_modules/mocha/bin/_mocha -- --reporter spec"
+    "test": "istanbul test mocha -- --reporter spec"
   },
   "repository": {
     "type": "git",
