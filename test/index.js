@@ -5,9 +5,14 @@ describe('convert', function () {
   it('should work for big unit to small unit', function () {
     assert.equal(Units.convert('1', 'eth', 'wei'), '1000000000000000000')
     assert.equal(Units.convert('20', 'gwei', 'wei'), '20000000000')
+    assert.equal(Units.convert('20.05', 'gwei', 'wei'), '20050000000')
+    assert.equal(Units.convert('20.005', 'kwei', 'wei'), '20005')
+    assert.equal(Units.convert('20.0005', 'kwei', 'wei'), '20000')
   })
   it('should work for small unit to big unit', function () {
     assert.equal(Units.convert('1', 'wei', 'eth'), '0.000000000000000001')
+    assert.equal(Units.convert('0.5', 'wei', 'eth'), '0')
+    assert.equal(Units.convert('0.0005', 'kwei', 'eth'), '0')
     assert.equal(Units.convert('1', 'finney', 'eth'), '0.001')
     assert.equal(Units.convert('20', 'gwei', 'eth'), '0.00000002')
   })
