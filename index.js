@@ -2,7 +2,7 @@ var BigNumber = require('bignumber.js')
 
 var Units = {}
 
-var rawUnits = require('./units.js')
+var rawUnits = require('./units.json')
 var units = {}
 
 Object.keys(rawUnits).map(function (unit) {

@@ -25,3 +25,7 @@ Units.lazyConvert('1 eth', 'wei') // '1000000000000000000 wei'
 Units.lazyConvert('1 wei', 'eth') // '0.000000000000000001 eth'
 Units.lazyConvert('1 finney', 'eth') // '0.001 eth'
 ```
+
+## Units
+
+Units are defined in `units.json`. It is compatible with [web3.js](https://github.com/ethereum/web3.js) and additionally includes `ETH`.
