@@ -21,6 +21,15 @@ describe('convert', function () {
       Units.convert('1', 'wei', 'random')
     }, /^Error: Unsupported output unit$/)
   })
+  it('should fail on non-decimal input', function () {
+    assert.throws(function () {
+      Units.convert('1,00', 'wei', 'random')
+    }, /^Error: Unsupported value$/)
+
+    assert.throws(function () {
+      Units.convert('test', 'wei', 'random')
+    }, /^Error: Unsupported value$/)
+  })
 })
 
 describe('lazyConvert', function () {
@@ -41,6 +50,15 @@ describe('lazyConvert', function () {
     assert.throws(function () {
       Units.lazyConvert('1 eth wei')
     }, /^Error: Invalid input$/)
+  })
+  it('should fail on non-decimal input', function () {
+    assert.throws(function () {
+      Units.convert('1,00', 'wei', 'random')
+    }, /^Error: Unsupported value$/)
+
+    assert.throws(function () {
+      Units.convert('test', 'wei', 'random')
+    }, /^Error: Unsupported value$/)
   })
 })
 
