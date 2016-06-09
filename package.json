@@ -25,9 +25,6 @@
     "url": "https://github.com/ethereumjs/ethereumjs-units/issues"
   },
   "homepage": "https://github.com/ethereumjs/ethereumjs-units#readme",
-  "dependencies": {
-    "bignumber.js": "^2.3.0"
-  },
   "devDependencies": {
     "coveralls": "^2.11.4",
     "istanbul": "^0.4.1",
